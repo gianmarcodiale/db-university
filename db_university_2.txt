@@ -1,0 +1,23 @@
+1.
+
+SELECT COUNT(id) AS enrolments_per_year
+FROM students
+GROUP BY YEAR(enrolment_date);
+
+2.
+
+SELECT COUNT(id) AS number_of_teachers, office_address
+FROM teachers
+GROUP BY office_address;
+
+3.
+
+SELECT AVG(vote), COUNT(exam_id)
+FROM exam_student
+GROUP BY exam_id;
+
+4.
+
+SELECT COUNT(id) as degrees_number, department_id
+FROM degrees
+GROUP BY department_id;
